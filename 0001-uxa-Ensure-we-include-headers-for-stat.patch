@@ -1,0 +1,29 @@
+From 0882aef2e946a80b046b40fcdac7488598e03935 Mon Sep 17 00:00:00 2001
+From: Ikey Doherty <michael.i.doherty@intel.com>
+Date: Wed, 1 Jul 2015 16:39:52 +0100
+Subject: [PATCH] uxa: Ensure we include headers for stat
+
+Signed-off-by: Ikey Doherty <michael.i.doherty@intel.com>
+---
+ src/uxa/intel_driver.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/src/uxa/intel_driver.c b/src/uxa/intel_driver.c
+index 2793da5..25bae71 100644
+--- a/src/uxa/intel_driver.c
++++ b/src/uxa/intel_driver.c
+@@ -72,6 +72,11 @@ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ #include "intel_uxa.h"
+ #endif
+ 
++#if HAVE_UDEV
++#include <sys/stat.h>
++#include <sys/types.h>
++#endif
++
+ #include "intel_options.h"
+ #include "i915_drm.h"
+ 
+-- 
+1.9.1
+

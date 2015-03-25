@@ -1,0 +1,11 @@
+--- xf86-video-intel-e41040fb55e84fc72612ae503944a99814a5c9d3/src/sna/compiler.h~	2016-02-15 10:40:47.000000000 +0000
++++ xf86-video-intel-e41040fb55e84fc72612ae503944a99814a5c9d3/src/sna/compiler.h	2016-04-23 20:15:47.652417836 +0000
+@@ -64,7 +64,7 @@
+ #endif
+ 
+ #if HAS_GCC(4, 6) && defined(__OPTIMIZE__)
+-#define fast __attribute__((optimize("Ofast")))
++#define fast __attribute__((optimize("O3")))
+ #else
+ #define fast
+ #endif
