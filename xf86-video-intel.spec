@@ -4,7 +4,7 @@
 #
 Name     : xf86-video-intel
 Version  : 1
-Release  : 32
+Release  : 33
 URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Summary  : No detailed summary available
@@ -35,6 +35,7 @@ BuildRequires : pkgconfig(xcb-present)
 BuildRequires : pkgconfig(xcb-sync)
 BuildRequires : pkgconfig(xcb-xfixes)
 BuildRequires : pkgconfig(xcomposite)
+BuildRequires : pkgconfig(xcursor)
 BuildRequires : pkgconfig(xdamage)
 BuildRequires : pkgconfig(xext)
 BuildRequires : pkgconfig(xf86driproto)
@@ -45,8 +46,10 @@ BuildRequires : pkgconfig(xorg-server)
 BuildRequires : pkgconfig(xrandr)
 BuildRequires : pkgconfig(xrender)
 BuildRequires : pkgconfig(xshmfence)
+BuildRequires : pkgconfig(xtst)
 BuildRequires : pkgconfig(xvmc)
 BuildRequires : pkgconfig(xxf86vm)
+BuildRequires : xscreensaver
 Patch1: 0001-uxa-Ensure-we-include-headers-for-stat.patch
 Patch2: use-O3.patch
 
