@@ -3,3 +3,17 @@
 xorg-macros
 dri3proto
 xfont
+xrandr 
+xdamage 
+xfixes 
+xcursor 
+xtst 
+xrender 
+xext 
+x11 
+pixman-1 
+xcb-dri3 
+xcb-sync 
+x11-xcb 
+xshmfence 
+x11
