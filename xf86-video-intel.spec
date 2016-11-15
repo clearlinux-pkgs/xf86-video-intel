@@ -4,7 +4,7 @@
 #
 Name     : xf86-video-intel
 Version  : 1
-Release  : 33
+Release  : 34
 URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Summary  : No detailed summary available
