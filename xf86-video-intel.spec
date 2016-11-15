@@ -4,7 +4,7 @@
 #
 Name     : xf86-video-intel
 Version  : 1
-Release  : 34
+Release  : 35
 URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,7 @@ Requires: xf86-video-intel-lib
 Requires: xf86-video-intel-bin
 Requires: xf86-video-intel-doc
 Requires: xf86-video-intel-data
+BuildRequires : libXfont2-dev
 BuildRequires : pkgconfig(cairo)
 BuildRequires : pkgconfig(cairo-xlib-xrender)
 BuildRequires : pkgconfig(dri2proto)
