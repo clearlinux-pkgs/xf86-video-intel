@@ -4,9 +4,9 @@
 #
 Name     : xf86-video-intel
 Version  : 1
-Release  : 35
-URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
-Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/dad64e9f76c718033402be7bfd2129866d492304.tar.gz
+Release  : 36
+URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/2948cf0531a5165787dc763028ae4c4ac1eed063.tar.gz
+Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/2948cf0531a5165787dc763028ae4c4ac1eed063.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -106,7 +106,7 @@ lib components for the xf86-video-intel package.
 
 
 %prep
-%setup -q -n dad64e9f76c718033402be7bfd2129866d492304
+%setup -q -n 2948cf0531a5165787dc763028ae4c4ac1eed063
 %patch1 -p1
 %patch2 -p1
 
@@ -141,7 +141,8 @@ rm -rf %{buildroot}
 
 %files dev
 %defattr(-,root,root,-)
-/usr/lib64/*.so
+/usr/lib64/libI810XvMC.so
+/usr/lib64/libIntelXvMC.so
 
 %files doc
 %defattr(-,root,root,-)
@@ -149,5 +150,8 @@ rm -rf %{buildroot}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/*.so.*
+/usr/lib64/libI810XvMC.so.1
+/usr/lib64/libI810XvMC.so.1.0.0
+/usr/lib64/libIntelXvMC.so.1
+/usr/lib64/libIntelXvMC.so.1.0.0
 /usr/lib64/xorg/modules/drivers/intel_drv.so
