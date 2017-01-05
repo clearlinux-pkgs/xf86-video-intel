@@ -4,9 +4,9 @@
 #
 Name     : xf86-video-intel
 Version  : 1
-Release  : 36
-URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/2948cf0531a5165787dc763028ae4c4ac1eed063.tar.gz
-Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/2948cf0531a5165787dc763028ae4c4ac1eed063.tar.gz
+Release  : 37
+URL      : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/169c74fa6c2cd9c28dd7bfacd9639cd245b8c8a8.tar.gz
+Source0  : https://cgit.freedesktop.org/xorg/driver/xf86-video-intel/snapshot/169c74fa6c2cd9c28dd7bfacd9639cd245b8c8a8.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -106,12 +106,13 @@ lib components for the xf86-video-intel package.
 
 
 %prep
-%setup -q -n 2948cf0531a5165787dc763028ae4c4ac1eed063
+%setup -q -n 169c74fa6c2cd9c28dd7bfacd9639cd245b8c8a8
 %patch1 -p1
 %patch2 -p1
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1483631885
 export CFLAGS="-O3 -g -fopt-info-vec "
 unset LDFLAGS
 %autogen --disable-static --with-default-accel=sna --enable-uxa --enable-sna --enable-dri3 --with-default-dri=3
